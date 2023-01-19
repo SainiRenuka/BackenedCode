@@ -20,4 +20,4 @@ jobs:
     steps:
     # Runs a single command using the runners shell
     - name: Send greeting
-      run: curl -X POST -H "Accept:application/vnd.github+json" -H "Authorization:Bearer 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" https://api.github.com/repos/SainiRenuka/TestDummy/dispatches -d '{"event_type":"custom_event_type"}'
+      run: curl -X POST -H "Accept:application/vnd.github+json" -H "Authorization:Bearer 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" https://api.github.com/repos/SainiRenuka/TestDummy/dispatches -d '{"event_type":"custom_event_type"}'
