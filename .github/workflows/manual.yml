@@ -20,4 +20,4 @@ jobs:
     steps:
     # Runs a single command using the runners shell
     - name: Send greeting
-      run: curl -X POST -H "Accept:application/vnd.github+json" -H "Authorization:Bearer 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" https://api.github.com/repos/SainiRenuka/TestDummy/dispatches -d '{"event_type":"custom_event_type"}'
+      run: curl -X POST -u "${{ secrets.PAT_USERNAME}}:${{secrets.API_TEST_SECRET}}" -H "Accept:application/vnd.github.everest-preview+json" -H "Content-Type:application/json" https://api.github.com/repos/SainiRenuka/TestDummy/dispatches --data '{"event_type":"custom_event_type"}'
